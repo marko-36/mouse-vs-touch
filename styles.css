@@ -1,0 +1,10 @@
+body{ background-color: white}
+h1, h2 { text-align: center; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif}
+h2 { color: lightgrey}
+h2::before { content:""; position: relative; left: -0.5rem} 
+body.mouse{ background-color: orange}
+body.mouse h2 { color: darkorange}
+body.touch{ background-color:lightgreen}
+body.touch h2 { color: limegreen}          
+body.mouse h2.mouse, body.touch h2.touch, body.undetected h2.undetected{ color: black}
+body.mouse h2.mouse::before, body.touch h2.touch::before,body.undetected h2.undetected::before { content:"❱"}
