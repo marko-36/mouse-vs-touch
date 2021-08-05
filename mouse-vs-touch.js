@@ -15,7 +15,6 @@ removeInputModeListeners = () => {
 setInputModeT = () => {
     window.inputMode = 'touch';
     window.preventSimMousemove = true;    
-    //document.getElementsByTagName('BODY')[0].className = 'touch'
     body.className ='touch';
     console.log('inputMode: touch')
     if (!window.permanentDetection) {removeInputModeListeners()}
@@ -26,7 +25,6 @@ addMouseMoves = () => {
         window.mousemovecount++;
         if (window.mousemovecount > 1){
             window.inputMode = 'mouse';
-            //document.getElementsByTagName('BODY')[0].className = 'mouse'
             body.className = 'mouse';
             console.log('inputMode: mouse')
             if (!window.permanentDetection) {removeInputModeListeners()}                    
